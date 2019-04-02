@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>Assignment 3</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+
+	h1,h2 {
+		color: black;
+		text-align: left;
+	}
+	p {
+	
+	}
+	body {
+		background-color: crimson;
+	}
+	h1 {
+		color: black;
+		margin-left: 25px;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<h1>Assignment 3</h1>
+	</header>
+	<main id="main" class="main">
+		<figure>
+			<img src = "albert.jpg" alt = "Test Image" width="250" height="250"/>
+		</figure>
+		<section id="indroduction" class="indroduction">
+			<h2>PLEASE FILL OUT THIS INFORMATION</h2>
+			<p style="color:darkslategray;font-size:20px;">This is the form I have created for my assignment # 3. I hope you think it is beautiful.
+			</p>
+		</section>
+	</main>
+		<section id="htmlforms" class="main-section">
+			<form action="somepage.php" method="get">
+				<div id="firstname-container" class="form-elm">
+					<label for="firstname">FIRST NAME</label>
+					<input type="text" name="firstname" id="firstname" placeholder="DAN">
+				</div>
+				<div id="lastname-container" class="form-elm">
+					<label for="lastname">LAST NAME</label>
+					<input type="text" name="lastname" id="lastname" placeholder="CORRELL">
+				</div>
+				<div id="email-container" class="form-elm">
+					<label for="email">EMAIL</label>
+					<input type="email" name="eMAIL" id="email" placeholder="EXAMPLE@ALGONQUINLIVE.COM">
+				</div>
+				<div id="password-container" class="form-elm">
+					<label for="password">PASSWORD</label>
+					<input type="text" name="password" id="password" placeholder="password">
+				</div>
+				<div id="dob-container" class="form-elm">
+					<label for="dob">DATE OF BIRTH</label>
+					<input type="date" name="dob" id="dob">
+				</div>
+				<div id="phonenumber-container" class="form-elm">
+					<label for="phonenumber">PHONE NUMBER</label>
+					<input type="number" name="phonenumber" id="phonenumber" placeholder="666-666-6666">
+				</div>
+				<div id="gender-container" class="form-elm">
+					<label for="gender">GENDER</label>
+					<input type="radio" name="gender" value="male"> Male
+					<input type="radio" name="gender" value="female"> Female
+					<input type="radio" name="gender" value="other"> Other
+				</div>
+				<div id="address-container" class="form-elm">
+					<label for="address">ADDRESS</label>
+					<input type="text" name="address" id="address" placeholder="address">
+				</div>
+				<div id="city-container" class="form-elm">
+					<label for="city">CITY</label>
+					<input type="text" name="city" id="city" placeholder="city">
+				</div>
+				<div id="og-contianer" class="form-elm">
+					<label for="province">PROVINCE</label>
+					<select id="province" name="province">
+						<optgroup label="province">
+							<option value="ALBERTA">ALBERTA</option>
+							<option value="BRITISH COLUMBIA">BRITISH COLUMBIA</option>
+							<option value="MANITOBA">MANITOBA</option>
+							<option value="NEW BRUNSWICK">NEW BRUNSWICK</option>
+							<option value="NEWFOUNDLAND & LABRADOR">NEWFOUNDLAND & LABRADOR</option>
+							<option value="NORTHWEST TERRITORY">NORTHWEST TERRITORY</option>
+							<option value="NOVA SCOTIA">NOVA SCOTIA</option>
+							<option value="NUNAVUT">NUNAVUT</option>
+							<option value="ONTARIO">ONTARIO</option>
+							<option value="PRINCE EDWARD ISLAND">PRINCE EDWARD ISLAND</option>
+							<option value="QUEBEC">QUEBEC</option>
+							<option value="SASKATCHEWAN">SASKATCHEWAN</option>
+							<option value="YUKON">YUKON</option>
+						</optgroup>
+					</select>
+				</div>
+				<div id="POSTAL-CODE-container" class="form-elm">
+					<label for="POSTAL-CODE">POSTAL CODE</label>
+					<input type="text" name="POSTAL-CODE" id="POSTAL-CODE" placeholder="POSTAL-CODE">
+				</div>
+				<div>
+					<h3>HOBBIES/INTEREST</h3>
+					<label for="EATING">EATING</label>
+					<input type="checkbox" name="EATING" id="EATING" value="EATING"><br>
+					<label for="SLEEPING">SLEEPING</label>
+					<input type="checkbox" name="SLEEPING" id="SLEEPING" value="SLEEPING"><br>
+					<label for="DRINKING">DRINKING</label>
+					<input type="checkbox" name="DRINKING" id="DRINKING" value="DRINKING"><br>
+					<label for="RUNNING">RUNNING</label>
+					<input type="checkbox" name="RUNNING" id="RUNNING" value="RUNNING"><br>
+				</div>
+				<div id="st-container" class="form-elm">
+					<label for="ur">Enter a URL</label>
+					<input type="url" name="url" id="ur"><br>
+				</div>
+				<div>
+					<button type="Submit">SUBMIT</button>
+					<button type="reset">RESET</button>
+				</div>
+			 </form>
+			</body>
+			</html>
