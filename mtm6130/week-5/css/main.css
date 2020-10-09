@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkslategrey;
+}
+
+/* 
+This is a CSS Comment
+Shortcut for adding the comment Control * / + * /
+ */
+ h1 {
+    color: white;
+ }
+
+ p {
+     background-color: lightblue;
+
+     /* Selecting multiple elements */
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6{
+     text-decoration: underline;
+ }
+
+ /* Selecting child elements */
+ nav ul {
+    list-style: none;
+ }
+
+ /* Selecting child elements multiple levels */
+ nav ul a {
+     color: darkslategrey;
+     text-decoration: none;
+ }
+
+ /* Selecting HTML element with class name */
+ .orange-link {
+     background: darkslategrey;
+     color: orange;
+     text-decoration: none;
+ }
+
+ /* Selecting element with id value */
+ #tow {
+     background-color: orange;
+ }
+
+ /* Adding multple classes to an element */
+ .large-text {
+     font-size: 20px;
+ }
+
+/* direct child selector */
+article>p {
+    font-size: 24px;
+}
+
+/* Adjacent Sibling Selector 
+Selecting only ul that is adjacent to an h3
+*/
+h3+ul {
+    /* thickness style color */
+    border: 1px solid black;
+}
+
+/* Attribute selector */
+[href="#tow"] {
+    font-weight: bold;
+}
+
+/* Using Pseudo classes 
+   Styling Navigation
+*/
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background: orange;
+    /* horizontal, vertical, blur, spread, color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position related selectors */
+/* First child + last child */
+aside ul li:first-child,
+section ol li:last-child {
+    font-weight: bold;
+}
+
+/* Collaspe table border into one */
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    /* hex color value with 6 characters */
+    background-color: #d5836c;
+}
+/*  Where n is 0, 1, 2, ..... until the number of elemetns */
+table th:nth-child(n),
+table td:nth-child(n) {
+   /* hex color value with 3 character */
+   /* #000000 = #000 = black #FFFFFF = #FFF = White */
+   border: 1px solid #000;
+}
+
+/* 2n+1 if n is 0, 1,3... then 2n=1 1,3,5,7.... */
+table td:nth-child(2n+1) {
+    background-color: rgba( 0, 0, 0, 0.2);
+
+/* 
+specificity: 0002  
+*/
+}
+body footer{
+    background: orange;
+}
+
+/* 
+specificity: 0001 
+*/
+footer {
+    background-color: aqua;
+}
+
+/* specificity: 0010 */
+.site-footer { 
+    background-color: cornflowerblue;
+}
+
+/* specificity: 0011 */
+.footer.site-footer {
+    background-color: teal;
+}
+
+blockquote.large-text {
+    text-transform: uppercase;
+}

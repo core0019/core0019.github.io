@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Reggie's Coffee shop - Home</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
     <!--Site Header-->
-    <header>
+    <header style="background:peru;">
         <h1>Reggie"s Coffee Shop</h1>
         <nav>
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -17,12 +19,14 @@
     <!--Begininning of main content-->
     <main>
         <!--Adding an on page link to jump to a section-->
-        <a href="#tow">Treat of the week</a>
+        <!-- Adding class orange-link to the a tag -->
+        <a href="#tow" class="orange-link">Treat of the week</a>
         <article>
             <h2>Our Story</h2>
             <!--Adding image-->
             <img src="images/coffee-shop.jpg" alt="coffee cup on coffee beans">
-            <blockquote>
+            <!-- Adding large-text -->
+            <blockquote class="large-text">
                 We love coffee <cite>- Reggie and Maria</cite>
             </blockquote>
             <p>
@@ -66,12 +70,13 @@
                 <dd>all purpose flour, baking sode, baking powder, salt, butter, sugar, eggs, bananas, lemon juice </dd>
             </dl>
             <!--Adding a link to the recipe and open in a new tab-->
-            <a href="https://www.yummly.com/recipe/Banana-Bread-2029753" target="_blank">Get the recipe</a>
+            <!-- Adding class orange-link large-text -->
+            <a href="https://www.yummly.com/recipe/Banana-Bread-2029753" target="_blank" class="orange-link large-text">Get the recipe</a>
         </section>
         <!--Adding section for menu -->
         <section>
           <h3>Menu Specials</h3>
-          <table border>
+          <table>
               <thead>
                   <tr>
                     <th colspan="2">Items</th>
@@ -97,7 +102,7 @@
           </table>
         </section>
     </main>
-    <footer>
+    <footer class="site-footer">
         <!--HTML Entities-->
         Copyright &copy; Reggie&apos;s Coffee Shop, 2020 &dollar;20
     </footer>
