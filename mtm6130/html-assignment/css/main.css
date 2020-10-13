@@ -31,13 +31,21 @@ h1.site-title {
     background: coral;
 }
 
-/* Removing multiple items from Nav List*/
+/* Removing bullets for unordered list*/
 .x {
     list-style-type: none;
 
+/* Targetting notes-link attributes */
 }
 #notes-link {
     text-decoration: none;
     background: yellow;
-    border: black;
+    border-style: solid;
+    border-color: black;
+}
+
+/* Changing background color focus state of links */
+
+#notes-link :hover {
+    background-color: red;
 }
