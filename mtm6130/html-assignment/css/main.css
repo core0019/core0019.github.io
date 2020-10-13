@@ -1,0 +1,43 @@
+/* Beginning of CSS */
+
+/* Changing the body font family + size */
+body {
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font: 18px;
+}
+
+/* Selecting header + footer elements */
+header, footer {
+        background-color: gray;       
+}
+
+/* Using the class selector to change the color of the main heading */
+h1.site-title {
+    color: coral;
+}
+
+/* Adding multiple changes to image using ID selector */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+/* Replacing bullets in Hobby list with Squares */
+#hobby-list {
+    list-style-type: square;
+}
+
+/* Adding background to odd list items using the nth-child selector */
+#hobby-list :nth-child(odd) {
+    background: coral;
+}
+
+/* Removing multiple items from Nav List*/
+.x {
+    list-style-type: none;
+
+}
+#notes-link {
+    text-decoration: none;
+    background: yellow;
+    border: black;
+}
