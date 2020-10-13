@@ -39,13 +39,11 @@ h1.site-title {
 }
 #notes-link {
     text-decoration: none;
-    background: yellow;
-    border-style: solid;
-    border-color: black;
+    background: coral;
+    border: 1px solid black
 }
 
-/* Changing background color focus state of links */
-
-#notes-link :hover {
-    background-color: red;
+/* Changing color on hover of links */
+nav ul a:hover {
+    color: chartreuse;
 }
