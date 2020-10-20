@@ -1,4 +1,16 @@
 
+
+/* Adding Header styling */
+header {
+    text-align: center;
+    background-color: #aad4cf;
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+}
 /* Styling of body tag */
 body {
     background-color: #AAD4CF;
