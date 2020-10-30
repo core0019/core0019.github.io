@@ -6,28 +6,28 @@
     *:after {
       box-sizing: inherit;
     }
-
+    /* Containing main content */
     .container {
+      background-color: #D4E9E7;
       max-width: 1024px;
       margin: 0 auto;
+      
     }
 
     /* Adding Header styling */
     header { 
       background-image: url(../images/lone-starfish-wide.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      position: relative;
-      padding: 90px;
+      padding: 60px;
     }
     
-
+    /* Styling h1 and other font tags  */
     h1 {
       font-size: 60px;
       color: white;
       text-align: center;
       position: relative;
-      top: 90px;
+      top: 100px;
+      left: 200px;
     }
     h1,
     h2,
@@ -39,9 +39,13 @@
     footer {
       font-family: sans-serif;
     }
-
+    
+    /* Adding styles to navigation section */
     nav ul {
       list-style: none;
+      position: relative;
+      top: 200px;
+      margin: auto;
 
     }
 
@@ -60,18 +64,20 @@
       color: black;
       text-decoration: none;
     }
-
+    /* Adding styling for article section */
     body{
       background-color: #aad4cf;
+      margin: 100px;
     }
     
+    /* Adding css to article image */
     .lone-starfish {
       width: 300px;
       float: left;
       margin-right: 20px;
       margin-bottom: 20px;
     }
-
+    /* Changing paragraph and facts section typography */
     p {
       font-size: 20px;
     }
@@ -80,7 +86,8 @@
       font-size: 20px;
       float: left;
       }
-
+      
+      /* Styling contact section */
       .contact {
         border: 1px solid black;
         padding: 0.5em;
@@ -92,4 +99,11 @@
 
       section {
         clear: both;
+      }
+
+      /* Adding footer position */
+      .site-footer {
+        position: relative;
+        bottom: 0;
+        right: 0;
       }
