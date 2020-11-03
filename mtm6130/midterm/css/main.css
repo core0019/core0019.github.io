@@ -18,6 +18,7 @@
     header { 
       background-image: url(../images/lone-starfish-wide.jpg);
       padding: 60px;
+      position: absolute;
     }
     
     /* Styling h1 and other font tags  */
