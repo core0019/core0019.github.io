@@ -1,106 +1,116 @@
-  html{
-      box-sizing: border-box;
-    }
-    *,
-    *:before,
-    *:after {
-      box-sizing: inherit;
-    }
-    /* Containing main content */
-    .container {
-      background-color: #D4E9E7;
-      max-width: 1024px;
-      margin: 0 auto;
-      
-    }
+html{
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* Containing main content */
+.container {
+  background-color: #D4E9E7;
+  max-width: 1024px;
+  margin: 0 auto;
+  
+}
 
-    /* Adding Header styling */
-    header { 
-      background-image: url(../images/lone-starfish-wide.jpg);
-      padding: 60px;
-    }
-    
-    /* Styling h1 and other font tags  */
-    h1 {
-      font-size: 60px;
-      color: white;
-      text-align: center;
-    }
+/* Adding Header styling */
+header { 
+  background-image: url(../images/lone-starfish-wide.jpg);
+  padding: 60px;
+}
 
-    h1,
-    h2,
-    h3,
-    a,
-    p,
-    form,
-    section,
-    footer {
-      font-family: sans-serif;
-    }
-    
-    /* Adding styles to navigation section */
+/* Styling h1 and other font tags  */
+h1 {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+}
 
-    nav ul {
-      list-style: none;
-      margin: auto;
+h1,
+h2,
+h3,
+a,
+p,
+form,
+section,
+footer {
+  font-family: sans-serif;
+}
 
-    }
+/* Adding styles to navigation section */
 
-    nav ul li {
-      display: inline-block;
-      width: 30%;
-      text-align: center;
-      border-right: 1px solid black;
-    }
-    
-    nav ul li:last-child {
-      border: none;
-    }
+nav ul {
+  list-style: none;
+  margin: auto;
 
-    nav ul a {
-      color: black;
-      text-decoration: none;
-    }
-    /* Adding styling for article section */
-    body{
-      background-color: #aad4cf;
-      margin: 100px;
-    }
-    
-    /* Adding css to article image */
-    .lone-starfish {
-      width: 300px;
-      float: left;
-      margin-right: 20px;
-      margin-bottom: 20px;
-    }
-    /* Changing paragraph and facts section typography */
-    p {
-      font-size: 20px;
-    }
+}
 
-      .facts {
-      font-size: 20px;
-      float: left;
-      }
-      
-      /* Styling contact section */
-      .contact {
-        border: 1px solid black;
-        padding: 0.5em;
-        margin: 0.5em;
-        width: 80%;
-        box-sizing: border-box;
-        float: left;
-      }
+nav ul li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid black;
+}
 
-      section {
-        clear: both;
-      }
+nav ul li:last-child {
+  border: none;
+}
 
-      /* Adding footer position */
-      .site-footer {
-        position: relative;
-        bottom: 0;
-        right: 0;
-      }
+nav ul a {
+  color: black;
+  text-decoration: none;
+}
+/* Adding styling for article section */
+body{
+  background-color: #aad4cf;
+  margin: 100px;
+}
+
+/* Adding css to article image */
+.lone-starfish {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/* Padding for article tag */
+article {
+  padding: 8px 25px 8px 25px;
+}
+/* Changing paragraph and facts section typography */
+p {
+  font-size: 20px;
+}
+
+  .facts {
+  background-color: #aad4cf;
+  font-size: 20px;
+  float: left;
+  }
+  
+  /* Styling contact section */
+  .contact {
+    background-color: #aad4cf;
+    border: 1px solid black;
+    padding: 0.5em;
+    margin: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  button {
+    background-color: #aad4cf;
+    color: black;
+    border: 1px solid black;
+    padding: 12px;
+  }
+  
+  /* Adding footer position */
+  .site-footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
