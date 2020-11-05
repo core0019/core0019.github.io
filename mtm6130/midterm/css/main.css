@@ -20,12 +20,12 @@ header .title h1 {
   padding: 210px 0 0 0;
 }
 
-
 /* Styling headings and other font tags  */
 h1 {
   color: white;
   font-size: 3em;
   font-weight: normal;
+  margin: 0;
 }
 
 h1,
