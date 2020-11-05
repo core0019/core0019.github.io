@@ -1,122 +1,128 @@
 
-/* Containing main content */
-.container {
-  background-color: #D4E9E7;
-  max-width: 1024px;
-  margin: 0 auto;
-  
-}
-
-/* Adding Header styling */
-header .title { 
-  background-image: url(../images/lone-starfish-wide.jpg);
-  background-repeat: no-repeat;
-  border: 0;
-  height: 341px;
-  text-align: center;
-}
-
-header .title h1 {
-  padding: 210px 0 0 0;
-}
-
-/* Styling headings and other font tags  */
-h1 {
-  color: white;
-  font-size: 3em;
-  font-weight: normal;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-a,
-p,
-form,
-section,
-footer {
-  font-family: sans-serif;
-}
-
-/* Adding styles to navigation section */
-
-nav ul {
-  list-style: none;
-  margin: auto;
-
-}
-
-nav ul li {
-  display: inline-block;
-  width: 30%;
-  padding-top: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  border-right: 1px solid black;
-}
-
-nav ul li:last-child {
-  border: none;
-}
-
-nav ul a {
-  color: black;
-  text-decoration: none;
-}
-
-/* Adding styling for article section */
-body{
-  font-size: 1em;
-  background-color: #aad4cf;
-  line-height: 1.3em;
-  margin: 0;
-  padding: 0;
-}
-
-/* Adding css to article image */
-article img {
-  width: 200px;
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 20px;
-}
-
-
-main {
-  padding: 10px;
-}
-
-  .facts ul {
-    margin: 0;
-    padding-left: 20px;
-  }
-
-  
-  /* Styling contact section */
-
-  .contact-form {
-    border: 1px solid #000000;
-    padding: 15px;
-  }
-
-  .contact-form div {
-    margin-bottom: 15px;
-  }
-  
-   input[type=text], textarea {
-      width: 100%;
-  }
-
-  button {
+  /* Containing main content */
+  .container {
     background-color: #D4E9E7;
-    text-transform: uppercase;
-    color: black;
-    border: 1px solid black;
-    padding: 12px;
+    max-width: 1024px;
+    margin: 0 auto;
+    
   }
-  
+
+  /* Adding Header styling */
+  header .title { 
+    background-image: url(../images/lone-starfish-wide.jpg);
+    background-repeat: no-repeat;
+    border: 0;
+    height: 341px;
+    text-align: center;
+  }
+
+  header .title h1 {
+    padding: 210px 0 0 0;
+  }
+
+  /* Styling headings and other font tags  */
+  h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  a,
+  p,
+  form,
+  section,
   footer {
-    text-align: right;
-    padding: 15px;
+    font-family: sans-serif;
   }
+
+  /* Adding styles to navigation section */
+
+  nav ul {
+    list-style: none;
+    margin: auto;
+
+  }
+
+  nav ul li {
+    display: inline-block;
+    width: 30%;
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border-right: 1px solid black;
+  }
+
+  nav ul li:last-child {
+    border: none;
+  }
+
+  nav ul a {
+    color: black;
+    text-decoration: none;
+  }
+
+  /* Adding styling for article section */
+  body{
+    font-size: 1em;
+    background-color: #aad4cf;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Adding css to article image */
+  article img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* Padding for main section */
+  main {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  /* Targeting facts unordered list */
+    .facts ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    
+    /* Styling contact section */
+    .contact-form {
+      border: 1px solid #000000;
+      padding: 15px;
+    }
+
+    .contact-form div {
+      margin-bottom: 15px;
+    }
+    
+    input[type=text], textarea {
+        width: 100%;
+    }
+    
+    /* Styling button */
+    button {
+      background-color: #D4E9E7;
+      text-transform: uppercase;
+      color: black;
+      border: 1px solid black;
+      padding: 12px;
+    }
+    
+    /* Targeting footer */
+    footer {
+      text-align: right;
+      padding: 15px;
+    }
