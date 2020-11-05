@@ -9,13 +9,15 @@
         <div class="container">
         <!-- Site Header -->
         <header>
-            <h1>Lone Starfish</h1>
+            <div class="title">
+                <h1>Lone Starfish</h1>
+           </div>
             <nav class="navigation-bar">
                 <ul>
-                    <li><a href="index.html">HOME</a></li>
-                    <li><a href="story.html" target="_blank">STORY</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="story.html" target="_blank">Story</a></li>
                     <!-- Adding link to Contact section of Home page -->
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -51,34 +53,35 @@
             <section class="contact">
                 <h3>Contact to learn more</h3>
                 <!-- Adding Contact Form -->
-                <form action="thanks.html" method="get">
-                <div>
-                    <label for="fullname">Your Name</label>
-                    <input type="text" id="fullname" name="fullname" required>
+                <div class="contact-form">
+                    <form action="thanks.html" method="get">
+                    <div>
+                        <label for="fullname">Your Name</label><br/>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+                    <div>
+                        <label for="email">Your Email</label><br/>
+                        <input type="text" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message">Your Message</label><br/>
+                        <textarea id="message" name="message"></textarea>
+                    </div>
+                    <div class="radiobutts">
+                        <h3>Would you like to visit the starfish?</h3>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="past">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="past">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="past">
+                    </div>
+                    <button type="submit">Send</button>
+                    </form>
                 </div>
-                <div>
-                    <label for="email">Your Email</label>
-                    <input type="text" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message"></textarea>
-                </div>
-                <div class="radiobutts">
-                    <h3>Would you like to visit the starfish?</h3>
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="yes" name="past">
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="past">
-                    <label for="maybe">Maybe</label>
-                    <input type="radio" id="maybe" name="past">
-                </div>
-                <button type="submit">SEND</button>
-                </form>
             </section>
-
         </main>
-        <footer class="site-footer">
+        <footer>
             <!--HTML Entities-->
             &copy; Lone Starfish
         </footer>

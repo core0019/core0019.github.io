@@ -1,11 +1,4 @@
-html{
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
+
 /* Containing main content */
 .container {
   background-color: #D4E9E7;
@@ -15,16 +8,24 @@ html{
 }
 
 /* Adding Header styling */
-header { 
+header .title { 
   background-image: url(../images/lone-starfish-wide.jpg);
-  padding: 60px;
+  background-repeat: no-repeat;
+  border: 0;
+  height: 341px;
+  text-align: center;
 }
 
-/* Styling h1 and other font tags  */
+header .title h1 {
+  padding: 210px 0 0 0;
+}
+
+
+/* Styling headings and other font tags  */
 h1 {
-  font-size: 60px;
   color: white;
-  text-align: center;
+  font-size: 3em;
+  font-weight: normal;
 }
 
 h1,
@@ -49,7 +50,9 @@ nav ul {
 nav ul li {
   display: inline-block;
   width: 30%;
+  padding-top: 10px;
   text-align: center;
+  text-transform: uppercase;
   border-right: 1px solid black;
 }
 
@@ -61,56 +64,59 @@ nav ul a {
   color: black;
   text-decoration: none;
 }
+
 /* Adding styling for article section */
 body{
+  font-size: 1em;
   background-color: #aad4cf;
-  margin: 100px;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
 }
 
 /* Adding css to article image */
-.lone-starfish {
-  width: 300px;
+article img {
+  width: 200px;
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 
-/* Padding for article tag */
-article {
-  padding: 8px 25px 8px 25px;
-}
-/* Changing paragraph and facts section typography */
-p {
-  font-size: 20px;
+
+main {
+  padding: 10px;
 }
 
-  .facts {
-  background-color: #aad4cf;
-  font-size: 20px;
-  float: left;
+  .facts ul {
+    margin: 0;
+    padding-left: 20px;
   }
+
   
   /* Styling contact section */
-  .contact {
-    background-color: #aad4cf;
-    border: 1px solid black;
-    padding: 0.5em;
-    margin: 0.5em;
-    width: 100%;
-    box-sizing: border-box;
-    float: left;
+
+  .contact-form {
+    border: 1px solid #000000;
+    padding: 15px;
+  }
+
+  .contact-form div {
+    margin-bottom: 15px;
+  }
+  
+   input[type=text], textarea {
+      width: 100%;
   }
 
   button {
-    background-color: #aad4cf;
+    background-color: #D4E9E7;
+    text-transform: uppercase;
     color: black;
     border: 1px solid black;
     padding: 12px;
   }
   
-  /* Adding footer position */
-  .site-footer {
-    position: relative;
-    bottom: 0;
-    right: 0;
+  footer {
+    text-align: right;
+    padding: 15px;
   }
