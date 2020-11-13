@@ -152,7 +152,29 @@ p {
     text-transform: uppercase;
 }
 
-/* mobile app selection */
+/* navigation */
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+/* LoVe HaTe */
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #00ADD8;
+    color: inherit;
+}
+
+/* --------------------------- mobile app selection ----------------- */
 .btn {
     text-decoration: none;
     display: inline-block;
@@ -165,6 +187,21 @@ p {
 .btn:focus {
     background: #00add8;
     color: inherit;
+}
+
+/* ---------actions section----------------- */
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    /* 1 x 21 = 21px */
+    text-align: center;
+    font-size: 1.5em;
+    /* 1.5 x 14 = 21px */
 }
 
 /* foooter */
@@ -186,7 +223,7 @@ p {
       html {
           font-size: 16px;
       }
-
+/* -----------------------Header------------------------------ */
       .mobile-logo {
           display: none;
       }
@@ -195,21 +232,48 @@ p {
           display: inline-block;
           max-width: 300px;
       }
+
+      /* banner */
       .banner {
           background-image: url("../images/desktop-banner.jpg");
       }
+
       .banner h1 {
           color: white;
       }
-     /* app section  */
+
+      /* navigation */
+        .nav-list {
+           display: flex;
+           
+        }
+        .nav-list li {
+            flex: 1;
+            border: none;
+            border-right: 1px solid grey;
+        }
+
+        .nav-list li:last-child {
+            border: none;
+        }
+
+     /* ---------------------------app section --------------- */
         .app img {
            width: 40%;
            float: left;
            margin-right: 1em;
        }
 
-       .app .btn {
+        .app .btn {
            float: right;
        }
-      }
+}
+
+/* -----------------------------
+                   Desktop Styles - 800px
+-------------------------------------------- */
+@media screen and (min-width:800px) {
+        .actions-list li {
+          max-width: 20%;
+    }
 }
