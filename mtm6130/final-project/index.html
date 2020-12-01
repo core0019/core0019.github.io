@@ -15,8 +15,8 @@
     <body>
         <div class="wrapper">
         <!-- Site Header -->
-        <div class="header-area">
         <header class="site-header">
+            <div class="header-area">
             <!-- Navigation Bar -->
             <nav class="nav-bar">
                 <ul class="nav-list">
@@ -47,12 +47,15 @@
                 </div>   
             </div>
         </header>
-        </div>
         <!-- Main Content -->
         <main>
+            <div class="container">
             <!-- About us section -->
             <section id="about-us">
-                <img src="images/about-us.jpg" alt="about-us">
+                    <div class="about-us-img">
+                    <img src="images/about-us.jpg" alt="about-us">
+                    </div>
+                    <div class="about-us-txt">
                 <h2>About us</h2>
                 <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, adipisci quaerat voluptate iusto repellendus magnam, 
@@ -65,6 +68,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus vel sapiente dolores eaque deleniti nobis veniam commodi dolorum? 
                 Error, voluptate delectus. Voluptatum a aspernatur illum atque hic nesciunt exercitationem.
                 </p>
+                </div>
             </section>
             <!-- Services section -->
             <section id="services">
@@ -137,6 +141,7 @@
             </section>
             <!-- Our Vision Section -->
             <section class="vision">
+                <div class="vision-div">
                 <h3>Our Vision</h3>
                 <img src="images/vision.jpg" alt="vision">
                 <p>
@@ -145,14 +150,17 @@
                 </p>
                 <a href="learn.html">Learn More</a>
                 <i class="im im-care-right"></i>
+             </div>
             </section>
             <!-- Our Team Section -->
             <section id="team">
                 <h2>Our Team</h2>
                 <!-- John Doe -->
-                <div class="john">
+                <div class="john-img">
                     <img src="images/john.jpg" alt="john">
-                    <h3>John Doe</h3>
+                </div>
+                <div class="john">
+                    <h3>John Doe</h3>                   
                     <h4>CEO and Co-owner</h4>
                     <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio voluptatem dignissimos alias ab. A in voluptatem laboriosam, 
@@ -160,8 +168,10 @@
                     </p>
                 </div>
                 <!-- Bob Rite -->
-                <div class="bob">
+                <div class="bob-img">
                     <img src="images/bob.jpg" alt="bob">
+                </div>
+                <div class="bob">
                     <h3>Bob Rite</h3>
                     <h4>CFO and Co-owner</h4>
                     <p>
@@ -192,9 +202,7 @@
                         <button type="submit">Send</button>
                     </form>
                 </div>
-            </section>
             <!-- Hours of Operation -->
-            <section class="hours">
                 <h3>Hours of Operation</h3>
                 <!-- Adding Table -->
                 <div class="hours-table">
@@ -218,17 +226,17 @@
                         </tbody>
                     </table>
                 </div>
-            </section>
             <!-- Location Section -->
-            <section class="location">
-                <div class="container">
+                <div class="location">
                     <h3>Location</h3>
                     <!-- Google Maps -->
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89622.99053779512!2d-75.76532139056643!3d45.415016740319814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60a3461d69eb3002!2sAlgonquin%20College%20Corporate%20Training!5e0!3m2!1sen!2sca!4v1606782105591!5m2!1sen!2sca" 
                     width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
+                </div>
             </section>
         </main>
+        </div>
         <!-- Site Footer -->
         <footer class="site-footer">
             <div class="container">
@@ -237,6 +245,5 @@
                 </p>
             </div>
         </footer>
-    </div>
     </body>
     </html>
