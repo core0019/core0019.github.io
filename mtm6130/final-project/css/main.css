@@ -49,146 +49,116 @@ table {
 
 
 /* ----------------------------------------------------------------------------------------
-                                        Custome Styles
+  ------------------------------------------- Custome Styles ------------------------------------
 -------------------------------------------------------------------------------------------- */
 
 html {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: bold;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 body {
     line-height: 1.5;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+img {
+    width:100%;
+    /* margin: 1rem; */
+}
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin: 0.5em;
+}
+
 h1 {
     font-size: 5.063rem;
+
     }
     
-    h2 {
+h2 {
         font-size: 3.375rem;
+
     }
     
-    h3 {
+h3 {
         font-size: 2.25rem;
+
     }
+p {
+    margin: 1.5rem 0;
+} 
+
+
+.site-header,
+.site-footer {
+    background-color: #222;
+}
     
-    h4 {
-        font-size: 1.5rem;
-    }
-    
-    h5 {
-        font-size: 1rem;
-    }
-    
-    p {
-      margin: 1em 0;
-    }
-    /* .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1em;
-    } */
+.banner {
+    background-image: url(../images/main-banner.jpg);
+}
+
+#about-us,
+.digital-trans,
+.marketing,
+.video,
+.web-dev,
+.print,
+.john,
+.bob {
+    background: #ffe6ac;
+}
+
+.digital-trans,
+.marketing,
+.video,
+.web-dev,
+.print {
+    margin: 1em;
+}
+
+.location iframe {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-    /* --------Header Styles----------- */
 
-    /* Navigation Bar */
-    .nav-list {
-        background-color: #222222;
-    } 
-
-    nav ul li {
-        display: block;
-    }
-
-    nav ul a {
-        color: #C78B07;
-        text-decoration: none;
-    }
-
-    #home {
-        background-color: #C78B07;
-        color: #222222;
-
-    }
-
-    .search-butt {
-        border: 1px solid #C78B07;
-        background: #222222;
-        color: #C78B07;
-    }
-    
-    /* Banner Area */
-    .banner-img {
-        width: 100%;
-    }
-
-    .welcome a {
-        background-color: #C78B07;
-        color: black;
-        margin: 2em 2em;
-        padding: 1.5em 1.5em;
-        text-decoration: none;
-    }
-    }
-
-    /* -------BODY---------- */
-
-    #about-us {
-        background: #FFE6AC;
-    }
-    
-    /* Styling Services  */
-    .service-info {
-        background: #FFE6AC;
-    }
-
-    #services img {
-        width: 100%;
-        padding: 2em 2em;
-    }
-
-    #services a {
-        background-color: #222222;
-        color: white;
-        margin: 2em 2em;
-        padding: 1.5em 1.5em;
-        text-decoration: none;
-    }
-
-    /* Our Vision */
-    .vision-div img {
-        width: 100%;
-    }
-
-    .vision div a {
-        background-color: #101B2D;
-        border: 1px solid #C78B07;
-        color: white;
-        margin: 2em 2em;
-        padding: 2em 2em;
-        text-decoration: none;
-
-    }
-
-    /* ------Our Team------- */
-
-       .john {
-           background: #FFE6AC;
-       }
-
-       .bob {
-           background: #FFE6AC;
-       }
-
-       /* ----------Contact---------- */
-
-       
 
 

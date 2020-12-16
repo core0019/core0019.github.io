@@ -13,7 +13,7 @@
                 <title>Dan Correll - Final Project</title>
             </head>
             <body>
-                <div class="wrapper">
+                <div class="container">
                 <!-- Site Header -->
                 <header class="site-header">
                     <!-- Navigation Bar -->
@@ -21,34 +21,33 @@
                         <ul class="nav-list">
                             <!-- Adding Navigation image -->
                             <li><img src="images/logo.png" alt="star-logo"></li>
-                            <li id="home"><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Home</a></li>
                             <li><a href="#about-us">About us</a></li>
                             <li><a href="#services">Services</a></li>
                             <li><a href="#team">Team</a></li>
                             <li><a href="#contact">Contact</a></li>
                             <!-- Adding Search Bar -->
                             <li>
-                                <form action="search-bar">
+                                <form action="search-bar" class="search">
                                     <input type="text" placeholder="Search.." name="search">
                                     <button type="submit" class="search-butt"><i class="im im-magnifier"></i></button>
                                     </form>
                             </li>
                         </ul>
                     </nav>
-                    <!-- Welcome Banner Area -->
-                    <div class="welcome">
-                        <img src="images/main-banner.jpg" class="banner-img" alt="banner">
-                        <div class="banner-text">
-                        <h1>Welcome to Three Star Media</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reprehenderit explicabo ad velit, facilis, 
-                            quas sed voluptas laborum repellendus distinctio enim debitis quod! Eveniet animi aperiam autem rerum sapiente ab.</p>
-                            <a href="#contact">Connect with us<i class="im im-care-right"></i></a>
-                        </div>
-                        </div>  
                 </header>
                 <!-- Main Content -->
                 <main>
-                    <div class="container">
+                     <!-- Welcome Banner Area -->
+                            <div class="banner">
+                            <!-- <img src="images/main-banner.jpg" class="banner-img" alt="banner"> -->
+                            <div class="banner-text">
+                            <h1>Welcome to Three Star Media</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reprehenderit explicabo ad velit, facilis, 
+                               quas sed voluptas laborum repellendus distinctio enim debitis quod! Eveniet animi aperiam autem rerum sapiente ab.</p>
+                             <a href="#contact">Connect with us<i class="im im-care-right"></i></a>
+                        </div>
+                    </div>
                     <!-- About us section -->
                     <section id="about-us">
                             <div class="about-us-img">
@@ -71,6 +70,7 @@
                     </section>
                     <!-- Services section -->
                     <section id="services">
+                        <div class="service-area">
                         <h2>Our Services</h2>
                         <!-- Digital Transformation -->
                         <img src="images/digital.jpg" alt="digital-transformation">
@@ -132,7 +132,9 @@
                             </p>
                             <a href="print.html">Print Plans<i class="im im-care-right"></i></a>
                         </div>
+                    </div>
                     </section>
+
                     <!-- Our Vision Section -->
                     <section class="vision">
                         <div class="vision-div">
@@ -227,9 +229,7 @@
                             width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </section>
-                    </div>
                 </main>
-                </div>
                 <!-- Site Footer -->
                 <footer class="site-footer">
                     <div class="container">
@@ -238,5 +238,6 @@
                         </p>
                     </div>
                 </footer>
+                </div>
             </body>
             </html>
