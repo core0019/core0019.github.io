@@ -197,7 +197,8 @@ h3 {
 }
 
 p {
-    margin: 1.5rem 0;
+    font-size: 16px;
+    padding: 12px;
 }
 
 
@@ -212,7 +213,7 @@ p {
 /* Nav */
 
 /* ************************************************************
- fix home button, spacing between navs and searchbox
+ spacing between navs and searchbox
 */
 .nav-bar {
     height: 400px;
@@ -268,9 +269,6 @@ nav li a {
 
 /* Banner */
 
-/* *********************************************
-  Show full image for banner, fix border  / (z-index?) opacity for banner text, & connect button
-****************************************************/
 .banner {
     background-image: url(../images/main-banner.jpg);
     background-position: center;
@@ -297,9 +295,6 @@ nav li a {
 
 /* --About us-- */
 
-/* ***************************************
-   Fixing positiong of H2 & P
-******************************************/
 #about-us img {
     padding: 10px;
 }
@@ -319,9 +314,6 @@ nav li a {
 
 /* Adding margin between services */
 
-/* ***************************************
-   Need to enlarge text / button area
-************************************* */
 .digital-trans,
 .marketing,
 .video,
@@ -344,11 +336,9 @@ nav li a {
 
 /* -------Our Vision----------- */
 
-/* ***************************
-Enlarge image & set button
-********************************** */
 #vision {
     background-image: url(../images/vision.jpg);
+    background-position: center;
     color: white;
 }
 
@@ -373,6 +363,10 @@ Fix spacing between img and text areas, center lines
     border-bottom: 2px solid #C78B07;
 }
 
+#team div {
+    margin-top: 15px;
+}
+
 /* ------------Contact Form ----------------------- */
 
 .contact-form div {
@@ -389,7 +383,7 @@ textarea {
     background-color: #222;
     color: #C78B07;
     font-size: 18px;
-    padding: 8px;
+    padding: 4px;
 
 }
 
