@@ -179,7 +179,6 @@ h1,
 h2,
 h3 {
     font-weight: bold;
-    margin: 0.5em;
 }
 
 h1 {
@@ -205,6 +204,7 @@ p {
 .site-header,
 .site-footer {
     background-color: #222;
+    padding: 15px;
 }
 
 /* --------Header------- */
@@ -215,46 +215,72 @@ p {
  fix home button, spacing between navs and searchbox
 */
 .nav-bar {
-    height: 500px;
+    height: 400px;
 }
 
-.nav-bar img {
+.nav-logo {
+    background: #c78c06;
+    /* width: 100px;
+    margin: 1em; */
+}
+
+.nav-logo img {
     width: 100px;
-    margin: 1em;
+    padding: 15px;
 }
 
 
-li a {
+nav li a {
     display: block;
     color: #c78c06;
     font-size: 16px;
     text-align: center;
+    padding: 10px;
 }
 
-li a:nth-child(1) {
+ nav li.active a {
     background: #c78c06;
     color: #222;
 }
 
+.search-bar {
+    display: flex;
+}
+
+.search-bar-input {
+    display: flex;
+    flex: 1;
+}
+
+.search-bar button {
+    display: flex;
+    flex: 0;
+    padding: 4px;
+}
+
 .search-butt {
+    float: right;
     border: 1px solid #c78c06;
     background: #222;
     color: #c78c06;
+    
 }
 
 /* Banner */
 
 /* *********************************************
-  Show full image for banner, fix border  / opacity for banner text, & connect button
+  Show full image for banner, fix border  / (z-index?) opacity for banner text, & connect button
 ****************************************************/
 .banner {
     background-image: url(../images/main-banner.jpg);
+    background-position: center;
     height: 600px;
 }
 
 .banner-text {
-    border: 1px solid black;
+    background: rgb(0, 0, 0, 0.6);
     color: white;
+    padding: 40px;
     width: 100%;
 }
 
@@ -263,10 +289,11 @@ li a:nth-child(1) {
     background-color: #C78B07;
     font-size: 16px;
     color: black;
-    margin: 2em 2em;
     padding: 1.5em 1.5em;
     text-decoration: none;
 }
+
+
 
 /* --About us-- */
 

@@ -18,40 +18,41 @@
     <div class="container">
         <!-- Site Header -->
         <header class="site-header">
+            <div class="nav-logo">
+                <img class="logo" src="images/logo.png" alt="star-logo">
+            </div>    
             <!-- Navigation Bar -->
             <nav class="nav-bar">
-                <div class="nav-logo">
-                    <img class="logo" src="images/logo.png" alt="star-logo">
-                </div>
                 <ul class="nav-list">
                     <!-- Adding Navigation image -->
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="#about-us">About us</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#team">Team</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!-- Adding Search Bar -->
-                    <li>
-                        <form action="search-bar" class="search">
-                            <input type="text" placeholder="Search.." name="search">
-                            <button type="submit" class="search-butt"><i class="im im-magnifier"></i></button>
-                        </form>
-                    </li>
                 </ul>
+                <div class="search-bar">
+                <!-- <form action="search-bar" class="search"> -->
+                    <div class="search-bar-input">
+                        <input type="text" placeholder="Search.." name="search">
+                    </div>
+                    <button type="submit" class="search-butt"><i class="im im-magnifier"></i></button>
+                <!-- </form> -->
+               </div>
             </nav>
         </header>
         <!-- Main Content -->
         <main>
             <!-- Welcome Banner Area -->
             <div class="banner">
-                <!-- <img src="images/main-banner.jpg" class="banner-img" alt="banner"> -->
                 <div class="banner-text">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum reprehenderit explicabo ad
                         velit, facilis,
                         quas sed voluptas laborum repellendus distinctio enim debitis quod! Eveniet animi aperiam autem
                         rerum sapiente ab.</p>
-                    <a href="#contact">Connect with us<i class="im im-care-right"></i></a>
+                    <a href="#contact">Connect with us <i class="im im-care-right"></i></a>
                 </div>
             </div>
             <!-- About us section -->
