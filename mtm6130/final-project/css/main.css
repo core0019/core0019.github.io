@@ -139,10 +139,6 @@ table {
   ------------------------------------------- Custome Styles ------------------------------------
 -------------------------------------------------------------------------------------------- */
 
-
-/* *************************************
-Fix outside spacing for Mobile
-*********************************** */
 html {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -261,10 +257,6 @@ p {
 /* --------Header------- */
 
 /* Nav */
-
-/* ************************************************************
- spacing between navs and searchbox
-*/
 .nav-bar {
     height: 400px;
 }
@@ -278,7 +270,6 @@ p {
     width: 100px;
     padding: 15px;
 }
-
 
 nav li a {
     display: block;
@@ -317,6 +308,8 @@ nav li.active a {
 
 }
 
+/* --------Main------- */
+
 /* Banner */
 
 .banner {
@@ -331,9 +324,6 @@ nav li.active a {
     padding: 40px;
     width: 100%;
 }
-
-
-
 
 
 /* --About us-- */
@@ -352,7 +342,7 @@ nav li.active a {
 .team-text {
     padding: 20px;
 }
-/* Adding margin between services */
+
 
 .service-item {
     margin: 1em;
@@ -363,11 +353,8 @@ nav li.active a {
     padding: 20px;
 }
 
-/* adding buttons for service area */
 
-
-
-/* -------Our Vision----------- */
+/* -------Our Vision-------- */
 
 #vision {
     background-image: url(../images/vision.jpg);
@@ -376,11 +363,8 @@ nav li.active a {
 }
 
 
-/* -------------Our Team------------------ */
+/* -----------Our Team------------ */
 
-/* **********************************************
-Fix spacing between img and text areas, center lines
-***************************************************/
 
 #team h4 {
     border-bottom: 2px solid #C78B07;
@@ -390,7 +374,7 @@ Fix spacing between img and text areas, center lines
     margin-top: 15px;
 }
 
-/* ------------Contact Form ----------------------- */
+/* ------------Contact Form --------------*/
 
 .contact-form div {
     margin-bottom: 15px;
@@ -412,24 +396,20 @@ textarea {
 
 /* Table */
 
-/* ******************************************
-          Figure out table
-*************************************************/
-
 table.hours {
     width: 100%;
 }
-table.hours th, table.hours td {
+
+table.hours th,
+table.hours td {
     border: 1px solid black;
     border-collapse: collapse;
     padding: 15px;
 }
 
 table.hours th {
-    background:#ffe6ac;
+    background: #ffe6ac;
 }
-
-
 
 .site-footer p {
     color: #C78B07;
@@ -441,48 +421,14 @@ table.hours th {
     width: 100%;
 }
 
-.service-area {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px 100px 100px;
-    grid-template-areas: 
-    "digital marketing"
-    "video web web";
-}
-
-.digital {
-    display: grid;
-    grid-area: digital;
-}
-
-.marketing {
-    display: grid;
-    grid-area: marketing;
-}
-
-.video {
-    display: grid;
-    grid-area: video;
-}
-
-.web {
-    display: grid;
-    grid-area: web;
-}
-
-.print {
-    display: grid;
-    grid-area: print;
-}
-
-
 
 /* ----------------------------------------------------------------------------------------
   ------------------------------------------- DESKTOP style ------------------------------------
 -------------------------------------------------------------------------------------------- */
 
 @media screen and (min-width: 760px) {
-                
+
+    /* --------Header-------- */
     header {
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
@@ -503,15 +449,113 @@ table.hours th {
         height: 60px;
         width: 60px;
         padding: 0px;
+
+    }
+
+    /* --------About-------- */
+
+    .about-us-img {
+        grid-area: img;
+    }
+
+    .about-us-txt{
+        grid-area: txt;
+    }
+
+
+    .about {
+    display: grid;
+    grid-template-areas:
+         'img img img txt txt txt'
+         'img img img txt txt txt';
+    grid-gap: 10px;
+         
+
+    }
+
+    .about-us-img img {
+        height: 400px;
+
+    }
+
+
+    /* --------Services-------- */
+
+    .marketing {
+        grid-area: marketing;
+    }
+
+    .digital {
+        grid-area: digital;
+    }
+
+    .video {
+        grid-area: video;
+    }
+
+    .web {
+        grid-area: web;
+    }
+
+    .print {
+        grid-area: print;
     }
 
     .service-area {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 100px 100px 100px 100px 100px;
         grid-template-areas:
-            "digital marketing"
-            "video web print";
+            'digital digital digital marketing marketing marketing'
+            'video video web web print print';
+        grid-gap: 10px;
+    }
+
+    .service-item img {
+        height: 340px;
+    }
+
+    /* --------Team-------- */
+
+    .john-img {
+        float: left;
+
+    }
+
+    .team-member img {
+        height: 350px;
+        width: auto;
+        padding: 20px;
+    }
+
+    .team-member::after {
+        content: "";
+        display: block;
+        clear: both;
+
+    }
+
+    .bob-img {
+        float: right;
+    }
+
+    /* --------Contact-------- */
+    .contact-form {
+        grid-area: form;
+    }
+
+    .contact-hours {
+        grid-area: hours;
+    }
+
+    .location {
+        grid-area: location;
+    }
+
+    .contact-container {
+        display: grid;
+        grid-template-areas:
+            'form form form location location location'
+            'hours hours hours hours hours hours';
+        grid-gap: 10px;
     }
 
 
