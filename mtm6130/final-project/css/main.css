@@ -154,6 +154,14 @@ html {
     margin: 0 auto;
 }
 
+section {
+    padding: 20px;
+}
+
+section#hero {
+    padding: 0px;
+}
+
 body {
     line-height: 1.5;
 }
@@ -201,6 +209,48 @@ p {
     padding: 12px;
 }
 
+/* ---Button Styles--- */
+
+.btn span.icon {
+    vertical-align: middle;
+    padding-left: 15px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 16px;
+    padding: 1.5em 1.5em;
+    text-decoration: none;
+}
+
+.btn-gold {
+    background-color: #C78B07;
+    color: black;
+}
+
+.btn-black {
+    background-color: #222;
+    color: white;
+}
+
+.btn-blue {
+    background-color: #032d5f;
+    border: 1px solid #c78c06;
+}
+
+.btn-gold a {
+    color: black;
+}
+
+.btn-black a {
+    color: white;
+}
+
+.btn-blue a {
+    color: white;
+}
+
+
 
 .site-header,
 .site-footer {
@@ -221,8 +271,7 @@ p {
 
 .nav-logo {
     background: #c78c06;
-    /* width: 100px;
-    margin: 1em; */
+    height: 46px;
 }
 
 .nav-logo img {
@@ -239,13 +288,14 @@ nav li a {
     padding: 10px;
 }
 
- nav li.active a {
+nav li.active a {
     background: #c78c06;
     color: #222;
 }
 
 .search-bar {
     display: flex;
+    height: 46px;
 }
 
 .search-bar-input {
@@ -264,7 +314,7 @@ nav li a {
     border: 1px solid #c78c06;
     background: #222;
     color: #c78c06;
-    
+
 }
 
 /* Banner */
@@ -272,7 +322,7 @@ nav li a {
 .banner {
     background-image: url(../images/main-banner.jpg);
     background-position: center;
-    height: 600px;
+    padding: 40px 0px 40px 0px;
 }
 
 .banner-text {
@@ -282,14 +332,7 @@ nav li a {
     width: 100%;
 }
 
-.banner-text a {
-    display: inline-block;
-    background-color: #C78B07;
-    font-size: 16px;
-    color: black;
-    padding: 1.5em 1.5em;
-    text-decoration: none;
-}
+
 
 
 
@@ -302,37 +345,27 @@ nav li a {
 
 /* Adding background bleed to elements */
 #about-us,
-.digital-trans,
-.marketing,
-.video,
-.web-dev,
-.print,
-.john,
-.bob {
+.team-member {
     background: #ffe6ac;
 }
 
+.team-text {
+    padding: 20px;
+}
 /* Adding margin between services */
 
-.digital-trans,
-.marketing,
-.video,
-.web-dev,
-.print {
+.service-item {
     margin: 1em;
+    background: #ffe6ac;
+}
+
+.service-item-inner {
+    padding: 20px;
 }
 
 /* adding buttons for service area */
 
-.service-area a {
-    display: inline-block;
-    background-color: #222;
-    font-size: 16px;
-    color: white;
-    margin: 2em 2em;
-    padding: 1.5em 1.5em;
-    text-decoration: none;
-}
+
 
 /* -------Our Vision----------- */
 
@@ -342,16 +375,6 @@ nav li a {
     color: white;
 }
 
-.vision-div a {
-    display: inline-block;
-    background-color: #032d5f;
-    border: 1px solid #c78c06;
-    font-size: 16px;
-    color: white;
-    margin: 2em 2em;
-    padding: 1.5em 1.5em;
-    text-decoration: none;
-}
 
 /* -------------Our Team------------------ */
 
@@ -393,14 +416,20 @@ textarea {
           Figure out table
 *************************************************/
 
-/* table {
+table.hours {
+    width: 100%;
+}
+table.hours th, table.hours td {
+    border: 1px solid black;
     border-collapse: collapse;
+    padding: 15px;
 }
 
-thead tr:nth-child(even) {
-    background-color: #ffe6ac;
+table.hours th {
+    background:#ffe6ac;
 }
- */
+
+
 
 .site-footer p {
     color: #C78B07;
@@ -410,4 +439,80 @@ thead tr:nth-child(even) {
 
 .location iframe {
     width: 100%;
+}
+
+.service-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas: 
+    "digital marketing"
+    "video web web";
+}
+
+.digital {
+    display: grid;
+    grid-area: digital;
+}
+
+.marketing {
+    display: grid;
+    grid-area: marketing;
+}
+
+.video {
+    display: grid;
+    grid-area: video;
+}
+
+.web {
+    display: grid;
+    grid-area: web;
+}
+
+.print {
+    display: grid;
+    grid-area: print;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+  ------------------------------------------- DESKTOP style ------------------------------------
+-------------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 760px) {
+                
+    header {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 100px;
+    }
+
+    .nav-list li {
+        float: left;
+        padding: 0px 10px 0px 10px;
+    }
+
+    .nav-logo {
+        background: none;
+        height: 46px;
+    }
+
+    .nav-logo img {
+        height: 60px;
+        width: 60px;
+        padding: 0px;
+    }
+
+    .service-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px 100px 100px 100px;
+        grid-template-areas:
+            "digital marketing"
+            "video web print";
+    }
+
+
 }
