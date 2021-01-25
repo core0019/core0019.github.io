@@ -141,13 +141,19 @@ table {
 
 /* Styling for Mobile 1st */
 
-/* Setting font type, size & border box to ensure that all elements padding and 
-border are included in the width and height */
+/* Setting font type, size for html */
 html {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
+
+	/* Using box-sizing: border-box to ensure all children to this element have the the same styles  */
 	box-sizing: border-box;
 }
+
+
+/* _______________________________________NAVIGATION BAR_______________________________________ */
+
+
 
 /* Styling navigation bar.*/
 /* Adding size and space to fit, border and color for mobile styles */
@@ -172,6 +178,10 @@ nav .nav-link {
 	color: black;
 }
 
+
+
+/* _______________________________________BODY_______________________________________ */
+
 /* Adding line space for readability  */
 body {
 	line-height: 1.5;
@@ -194,11 +204,15 @@ section {
 }
 
 
-/* Adding all styles to headers */
+/* _______________________________________HEADERS_______________________________________ */
+
+/* Adding bold font for headers */
 h1,
 h2 {
 	font-weight: bold;
 }
+
+/* Setting up font styles for headers for mobile styles. */
 
 h1 {
 	font-size: 5.063rem;
@@ -232,32 +246,47 @@ p {
 
 }
 
-.contact-form div {
-    margin-bottom: 15px;
-}
+
+/* _______________________________________CONTACT PAGE_______________________________________ */
+
+
+/*  Setting sizes for contact form */
 
 input[type=text],
+input[type=email],
 textarea {
-    width: 100%;
+	width: 100%;
+	padding: 12px;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
 }
+
+/* Styling contact form send button  */
 
 .contact-form button {
-    display: inline-block;
-    background-color: #F2466B;
-    color: black;
+	display: inline-block;
+	background-color: #F2466B;
+	border: 3px solid black;
+	color: black;
 	font-size: 18px;
-    padding: 10px;
+	padding: 10px;
+	cursor: pointer;
 
 }
 
 
+/* _______________________________________FOOTER_______________________________________ */
 
+/* Setting footer size, padding, margin */
 
-/* Styling page footer */
 footer {
 	width: 300px;
 	margin: 10px auto;
 	padding: 45px;
+
+/* Styling footer  */
+
 	border: 5px solid black;
 	text-align: center;
 	background-color: #F2466B;
@@ -272,10 +301,12 @@ footer p {
 
 
 /* ----------------------------------------------------------------------------------------
-  ------------------------------------------- Desktop Styles - 600px ------------------------------------
+  ------------------------------------------- Desktop Styles - 550px ------------------------------------
 -------------------------------------------------------------------------------------------- */
 
-@media screen and (min-width: 500px) {
+/* Setting medium screen width */
+
+@media screen and (min-width: 550px) {
 
 	nav,
 	main,
@@ -285,26 +316,29 @@ footer p {
 
 }
 
-
-
 /* ----------------------------------------------------------------------------------------
   ------------------------------------------- Desktop Styles - 800px ------------------------------------
 -------------------------------------------------------------------------------------------- */
 
+/* Setting large screen width */
 
 @media screen and (min-width: 800px) {
-	 
+
 	nav,
 	main,
 	footer {
-		width: 85%;	
+		width: 85%;
 	}
+
+/* Setting large screen display, using flex box */
 
 	nav .nav-link {
 		display: flex;
 		flex-direction: row;
 
 	}
+
+/* Aligning Headers, P tags & weird guy image to left for large screens */
 
 	h1,
 	h2,
@@ -313,8 +347,9 @@ footer p {
 	}
 
 
-    .about-image {
+	.about-image {
 		float: left;
+
 	}
 
 }
