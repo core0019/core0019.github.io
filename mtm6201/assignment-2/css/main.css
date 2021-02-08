@@ -482,3 +482,280 @@ header img {
 
 
 }
+
+/* Styling form section */
+
+.section-form {
+    width: auto;
+    margin: 60px;
+    padding: 60px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+}
+
+
+.section-form-text h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+.section-form-text p {
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+.section-form input  {
+    margin: 7px;
+    padding: 5px;
+    background: #f7f7ff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    color: #A9A9A9;
+    
+    
+}
+
+.section-form .section-checkbox label{
+     font-size: 0.5em;
+     font-weight: bold;
+}
+
+
+.section-btn .btn {
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     background: #4ba47c;
+     font-weight: bold;
+     padding: 5px;
+}
+
+.section-form-link {
+    font-size: 0.5em;
+}
+
+.section-form-link a {
+    color: #ff8480;
+}
+
+/* ----FOOTER---- */
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid #ccc;
+    background: #fffd8c;
+    margin: -0.5px;
+}
+
+.footer-text h3{
+     font-size: 12px;
+     font-weight: bold;
+     margin: 5px;
+}
+
+.footer-text p{
+    font-size: 12px;
+    margin: 5px;
+}
+
+.footer-form input  {
+    margin: 7px;
+    padding: 5px;
+    background: #f7f7ff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 10px;
+    color: #A9A9A9;
+       
+}
+
+.footer-btn .btn-2 {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background: #ff8480;
+        font-weight: bold;
+        padding: 5px;
+        color: white;
+
+}
+
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=======
+    /* box-sizing: border-box; */
+
+}
+
+>>>>>>> 0664c6680aca02b15e609a874b3cad0c40b59c37
+/* .section {
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: 1;
+    /* grid-auto-flow: dense; */
+/* align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+}
+header img {
+    width: 15%;
+    padding: 10px;
+} */
+<<<<<<< HEAD
+/* .header-container {
+=======
+ .header-container {
+>>>>>>> 0664c6680aca02b15e609a874b3cad0c40b59c37
+    grid-area: header;
+}
+
+.main-container {
+    grid-area: section;
+}
+
+.footer-container {
+    grid-area: footer;
+}
+
+.container {
+    display: grid;
+    gap: 15px;
+    grid-template-areas:
+        "header"
+        "section"
+        "footer";
+<<<<<<< HEAD
+} */
+
+/* ------------------------------Media Query for Width 500px --------------------------------- */
+
+/* @media (min-width: 500px) {
+    .container {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+            "header header"
+            "section section"
+            "footer footer"
+    } */
+=======
+}
+
+/* ------------------------------Media Query for Width 500px --------------------------------- */
+
+@media (min-width: 500px) {
+    .container {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas:
+        "header header"
+        "section section"
+        "footer footer"
+    }
+>>>>>>> 0664c6680aca02b15e609a874b3cad0c40b59c37
+
+
+
+
+<<<<<<< HEAD
+    /* ------------------------------Media Query for Width 700px --------------------------------- */
+
+
+    /* @media (min-width: 700px) {
+        .container {
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-areas:
+                "header header header"
+                "section section section"
+                "footer footer footer"
+        }
+    } */ */
+=======
+        /* ------------------------------Media Query for Width 700px --------------------------------- */
+
+
+    @media (min-width: 700px) {
+        .container {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "header header header"
+            "section section section"
+            "footer footer footer"
+        }
+    }
+>>>>>>> 0664c6680aca02b15e609a874b3cad0c40b59c37
+
+
+
+
+}
