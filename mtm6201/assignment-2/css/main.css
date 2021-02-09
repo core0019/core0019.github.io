@@ -165,6 +165,11 @@ html {
 
 /* ----HEADER---- */
 
+.header-container {
+    margin: 0 8%;
+    
+}
+
 /*  Adding flex to header */
 .header {
     display: flex;
@@ -181,30 +186,29 @@ header img {
 
 /* ----BODY---- */
 
-/* Adding line space for readability  */
-body {
-	line-height: 1.5;
-}
+/* body {
+	line-height: 1.5em;
+} */
 
 /* ----MAIN---- */
 
-.main {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    
-
+.main-container {
+    margin: 0 8%;
 }
+
 
 /* Styling section text & Image */
 
-.section-text h1 {
+h1 {
     font-size: 3em;
     font-weight: bold;
+    line-height: 1.2em;
 }
 
 .section-text p {
-    font-size: 1.5em;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding-top: 15px;
 }
 
 section img {
@@ -216,27 +220,28 @@ section img {
 /* Styling form section */
 
 .section-form {
-    width: auto;
-    margin: 60px;
-    padding: 60px;
-    border: 1px solid #ccc;
+    margin-top: 15px;
+    padding: 15px;
     border-radius: 10px;
     background: white;
+    box-shadow: 4px 4px 10px #c4c4c4;
 }
 
 
-.section-form-text h2 {
-    font-size: 1.5em;
+h2 {
+    font-size: 2.5em;
     font-weight: bold;
 
 }
 
 .section-form-text p {
-    font-size: 0.5em;
+    font-size: 0.7em;
     font-weight: bold;
+    margin-top: 15px;
 }
 
 .section-form input  {
+    width: 100%;
     margin: 7px;
     padding: 5px;
     background: #f7f7ff;
@@ -246,10 +251,11 @@ section img {
     color: #A9A9A9;
     
     
+    
 }
 
 .section-form .section-checkbox label{
-     font-size: 0.5em;
+     font-size: 0.7em;
      font-weight: bold;
 }
 
