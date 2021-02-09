@@ -146,10 +146,8 @@ html {
 
 }
 
-/* Setting container width to allow for whitespace on sides of elements */
-
 .container {
-    display: grid;
+    /* display: grid; */
     max-width: 1200px;
     margin: 0 auto;
     background: #f7f7ff;
@@ -157,6 +155,8 @@ html {
 
 /* .main-container {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+    
 }
 
 .footer-container {
@@ -166,7 +166,7 @@ html {
 /* ----HEADER---- */
 
 /*  Adding flex to header */
-header {
+.header {
     display: flex;
     flex-direction: column;
 }
@@ -174,7 +174,7 @@ header {
 /* Sizing header image */
 header img {
     max-width: 30%;
-    height: 0 auto;
+    max-height: 30%;
     padding: 15px;
 
 }
