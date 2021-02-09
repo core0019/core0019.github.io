@@ -24,7 +24,7 @@
             <header class="header">
                 <!-- Adding div to put site header logo -->
                 <div class="header-img">
-                <img src="images/logo/logo.png" alt="site-logo">
+                    <img src="images/logo/logo.png" alt="site-logo">
                 </div>
             </header>
         </div>
@@ -51,33 +51,32 @@
                         <!-- Adding form elements such as personal info, Agreement term checkbox, drive with us button 
                             and Already applied link -->
                         <!-- Personal info form elements -->
-                        <form action="">
-                        <div class="section-form-item">
-                            <input class="section-form-input" type="text" value="First Name">
-                        </div>
-                        <div class="section-form-item">
-                            <input class="section-form-input" type="text" value="Last Name">
-                            <div class="section-form-section">
-                                <input class="section-form-input" type="text" value="Phone Number">
+                        <form>
+                            <div class="section-form-item">
+                                <input class="section-form-input" type="text" value="First Name">
                             </div>
                             <div class="section-form-item">
-                                <input class="section-form-input" type="text" value="Email Address">
+                                <input class="section-form-input" type="text" value="Last Name">
+                                <div class="section-form-section">
+                                    <input class="section-form-input" type="text" value="Phone Number">
+                                </div>
+                                <div class="section-form-item">
+                                    <input class="section-form-input" type="text" value="Email Address">
+                                </div>
+                                <!-- Agree to terms checkbox -->
+                                <div class="section-checkbox">
+                                    <input type="checkbox" name="checkbox">
+                                    <label for="agreement">I agree to dash terms</label>
+                                </div>
+                                <!-- Drive with us Button -->
+                                <div class="section-form-btn">
+                                    <button class="btn">Drive with us</button>
+                                </div>
+                                <div class="section-form-link">
+                                    <p>Already applied?<a href="">Check your application status here</a></p>
+                                </div>
                             </div>
-                            <!-- Agree to terms checkbox -->
-                            <div class="section-checkbox">
-                                <input type="checkbox" name="checkbox">
-                                <label for="agreement">I agree to dash terms</label>
-                            </div>
-                            <!-- Drive with us Button -->
-                            <div class="section-btn">
-                                <button class="btn">DRIVE WITH US</button>
-                            </div>
-                            <div class="section-form-link">
-                                <p>Already applied?<a href="">Check your application status here</a></p>
-                            </div>
-                        </div>
-                        </div>
-                    </form>
+                        </form>
                     </div>
                 </section>
             </main>
@@ -85,26 +84,24 @@
         <!-- FOOTER -->
         <div class="footer-container">
             <footer>
+                <!-- Adding Footer form input information -->
+                <div class="footer-form">
                 <!-- Footer Header and paragraph text -->
                 <div class="footer-text">
                     <h3>See how much you can earn with Dash.</h3>
                     <p>how many hours do you want to drive with us this week</p>
                 </div>
-                <!-- Adding Footer form input information -->
-                <div class="footer-form">
-                    <div class="footer-form-item">
+                    <form>
+                    <div class="footer-form-input">
                         <input class="section-form-input" type="text" value="Hours">
-                    </div>
-                </div>
-                <div class="footer-form">
-                    <div class="footer-form-item">
                         <input class="section-form-input" type="text" value="City">
-                    </div>
-                </div>
+                    </div>     
                 <!-- Calculate Button -->
-                <div class="footer-btn">
-                    <button class="btn-2">CALCULATE</button>
+                <div class="footer-form-btn">
+                    <button class="btn">CALCULATE</button>
                 </div>
+              </form>
+            </div>
                 <!-- Social Media Icons -->
                 <div class="footer-icons">
                     <a href="https://www.facebook.com/" target="_blank"><img src="images/icons/facebook.svg"
