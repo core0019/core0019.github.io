@@ -143,22 +143,10 @@ table {
 html {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-
-}
-
-.container {
     background: #f7f7ff;
+
 }
 
-/* .main-container {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    
-    
-}
-
-.footer-container {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-} */
 
 /* ----HEADER---- */
 
@@ -331,9 +319,9 @@ h3 {
 .footer-icons {
     display: inline;
     text-align: right;
-    /* display: flex;
-    /* flex-direction: row; */
-    /* justify-content: flex-end; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 
 
 }
@@ -346,23 +334,55 @@ h3 {
 
 
 /* ----------------------------------------------------------------------------------------
-  ------------------------------------------- Media Query for Tablet ------------------------------------
+  ------------------------------------------- Media Query for Tablet + Desktop ------------------------------------
 -------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 400px) {
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
     footer {
         display: grid;
-        grid-template-columns: 1fr;
-    
+        grid-template-columns: 1fr 1fr;
+
     }
-             
-    .footer-icons {
-              display: flex;
-              flex-direction: row;
-              justify-content: space-around;
-              text-align: center;
-          }
+
+    /* .footer-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    } */
 }
 
+@media only screen and (min-width: 960px) {
 
+
+
+    .section-img {
+        display: none;
+        
+        
+    }
+
+
+
+    .content   {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-image: url("images/bg-image/scooter.svg");
+        background-repeat: no-repeat;
+        background-position: center 40%;
+        background-size: 50%;
+
+ 
+    }
+            
+
+
+}
