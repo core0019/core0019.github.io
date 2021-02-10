@@ -288,7 +288,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     max-width: 960px;
-    margin: auto;
+    margin: 0 8%;
     padding-top: 20px;
 
 }
@@ -329,16 +329,11 @@ h3 {
 
 }
 
-.footer-icons {
-    max-width: 180px;
-
-    
-}
-
 .footer-social-icons {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    display: inline;
+    /* display: flex;
+    flex-direction: row; */
+    /* justify-content: space-between; */
 }
 
 .footer-icons img {
@@ -368,6 +363,7 @@ h3 {
 
 
 
+
 }
 
 @media only screen and (min-width: 960px) {
@@ -394,6 +390,10 @@ h3 {
         /* background-size: 50%; */
 
  
+    }
+
+        .footer-social-icons {
+        justify-content: flex-end;
     }
             
 
