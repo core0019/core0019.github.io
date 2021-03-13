@@ -1,0 +1,309 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ----------------------------------------------------------------------------------------
+  ------------------------------------------- Global Styles ------------------------------------
+-------------------------------------------------------------------------------------------- */
+
+html {
+    box-sizing: border-box;
+}
+
+/* Styling site lines */
+
+.line-1 {
+    background: #509F4F;
+    height: 10px;
+    width: 60%;
+}
+
+.line-2 {
+    background: #FF5A5F;
+    height: 10px;
+    max-width: 60%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.line-3 {
+    background: #509F4F;
+    height: 5px;
+    max-width: 95%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.line-4 {
+    background: #FF5A5F;
+    height: 5px;
+    max-width: 95%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+/* Setting up site navigation bar  */
+
+.nav-list li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #3C3C3C;
+
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-list a.current {
+    background-color: #509F4F;
+    color: inherit;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Setting size & animation for takeout icon */
+
+.takeout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.takeout-logo {
+    width: 40px;
+    height: 50px;
+}
+
+.takeout-logo {
+
+    animation: rotation 20s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*  Setting up Header Logo */
+
+.logo {
+    width: 160px;
+    height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*  Setting font styles for Headings, Paragraphs & Footer Contact info */
+
+/* Setting up footer */
+
+.social-green {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-green img {
+    height: 35px;
+    width: auto;
+}
+
+/* Hidding black social icons & footer contact info for mobile */
+
+.social-black,
+.footer-contact {
+    display: none;
+}
+
+
+/*  Setting font styles for Headings & Paragraphs */
+
+h1,
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3C3C3C;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    color: #3C3C3C;
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------
+  ------------------------------------------- Custom Styles ------------------------------------
+-------------------------------------------------------------------------------------------- */
+
+ 
+
+img {
+    width: 100%;
+    height: auto;
+}
