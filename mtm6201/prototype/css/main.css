@@ -260,6 +260,7 @@ html {
 .social-green img {
     height: 35px;
     width: auto;
+    padding-bottom: 40px;
 }
 
 /* Hidding black social icons & footer contact info for mobile */
