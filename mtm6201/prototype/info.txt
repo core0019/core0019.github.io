@@ -1,3 +1,21 @@
+
+
+
+Colors -
+#509F4F
+#F45151
+#3C3C3C
+
+
+Typography- 
 font-family: 'Fira Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
+
+Images - 
+
+https://unsplash.com/photos/0RUlEosIP8Y
+
+https://unsplash.com/photos/tZ3ddh8E8us
+
+https://unsplash.com/photos/47mkgWDly0c
