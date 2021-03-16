@@ -143,6 +143,10 @@ html {
     box-sizing: border-box;
 }
 
+.container {
+    margin: 0 5%;
+}
+
 /* Styling site lines */
 
 .line-1 {
@@ -199,6 +203,8 @@ html {
     color: inherit;
 }
 
+
+
 .nav-list {
     display: flex;
     flex-wrap: wrap;
@@ -238,7 +244,7 @@ html {
 /*  Setting up Header Logo */
 
 .logo {
-    width: 160px;
+    max-width: 160px;
     height: 45px;
     margin-left: auto;
     margin-right: auto;
@@ -248,6 +254,10 @@ html {
 /*  Setting font styles for Headings, Paragraphs & Footer Contact info */
 
 /* Setting up footer */
+
+.footer-container {
+    margin: 0 5%;
+}
 
 .social-green {
     display: flex;
@@ -317,6 +327,8 @@ img {
 
 /* Setting up media query for tablets + desktop */
 
+
+/* navigation bar using flex */
 @media only screen and (min-device-width: 768px) {
     .nav-list {
         display: flex;
@@ -340,28 +352,36 @@ img {
 
     }
 
+    /* Setting size for header logo */
+
     .takeout {
         position: relative;
     }
 
     .takeout-logo {
         position: absolute;
-        top: -20px;
-        right: 0;
+        top: -30px;
+        right: 60px;
         max-width: 100%;
         height: auto;
     }
+
+    /* Hiding site lines and green mobile social logos */
 
     .line-1,
     .line-2 {
         display: none;
     }
 
+
+
     .social-icons-green {
         display: none;
     }
 
-    .social-black{
+    /* Setting size and position for tablet / desktop footer*/
+    
+    .social-black {
         width: 50px;
         height: 50px;
         padding-left: 5%;
@@ -371,7 +391,30 @@ img {
         align-items: left;
     }
 
-    .footer-contact p {
-         float: right;
+
+     .footer-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        
     }
+
+    .footer-contact p {
+        position: relative;
+        top: -65px;
+        left: -65px;
+        padding: -15px;
+    }
+
+    .footer-contact p {
+        font-size: 8px;
+        line-height: 12px;
+        text-align: left;
+        
+
+    }
+
+ 
 }
+
+         
