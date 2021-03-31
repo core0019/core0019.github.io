@@ -1,0 +1,39 @@
+ Dan Correll - Bootstrap this
+
+Bootstrap:
+Bootstrap is an open-source framework, used to build modern responsive, mobile first websites. 
+It was first created by Twitter to help with regularity for its developers.Bootstrap uses both CSS & JavaScript 
+languages to offer a wide plethora of tools. 
+
+How to use:
+Installation:
+There are two are processes’ of installing the bootstrap framework, you can either download it, 
+or use the easier way, a content delivery network (CDN). Using the CDN allows for a faster delivery of Web Content.
+Like adding a CSS to link to your HTML, simply paste the CDN link into your HTML head to get started.
+The framework does offer a basic template that you can paste into your main html file.
+To obtain the template, follow the link below.
+https://getbootstrap.com/docs/4.4/getting-started/introduction/
+
+Getting started:
+Once you have installed the framework you can then browse through the many tools Bootstrap has to offer, 
+including Typography, Colors, Responsive imaging, Buttons, Navigation, Mobile-first Flex & Grid layouts.
+These are just a few resources that framework has to offer, the best way to discovery all of them is to delve 
+into Bootstrap’s extensive library which is hosted on its webpage.
+https://getbootstrap.com/
+
+
+Images:
+
+https://unsplash.com/photos/mX9YGeMIcfg
+https://unsplash.com/photos/m_HRfLhgABo
+https://unsplash.com/photos/FCHlYvR5gJI
+
+
+
+
+
+
+
+
+
+
