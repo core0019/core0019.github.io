@@ -21,12 +21,25 @@ These are just a few resources that framework has to offer, the best way to disc
 into Bootstrap’s extensive library which is hosted on its webpage.
 https://getbootstrap.com/
 
+Breakpoints:
+The Bootstrap framework includes 6 breakpoints that are used to build responsive web pages, 
+the sizes consist of x-sm, sm, med, lrg, x-lrg and xx-lrg. These breakpoints are based off a 12-column grid-system, 
+and begin with a mobile-first approach, to help with simple but effective layouts and design. 
+To find out more about Bootstrap breakpoints click on the link below.
+
+Typography:
+Bootstrap allows us to set-up and style typography in a glut of ways, here we can customize headings & paragraph text, 
+and the ability to alter list, add block, source quotes and style inline text elements. 
+Bootstrap font sizes have been made to be responsive by default, for scalability across different screen sizes.
+
+
 
 Images:
-
+https://unsplash.com/photos/TkZYCXmrKK4
 https://unsplash.com/photos/PVO_tj2APuM
 https://unsplash.com/photos/m_HRfLhgABo
 https://unsplash.com/photos/FCHlYvR5gJI
+
 
 
 
