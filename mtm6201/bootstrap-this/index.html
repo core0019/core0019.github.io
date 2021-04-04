@@ -14,71 +14,106 @@
 </head>
 
 <body>
+    <!-- <header class="bd-header bg-dark align-items-stretch border-bottom"> -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+            <div class="justify-content-end ">
+                <ul class="nav p-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron bg-info">
+            <h1 class="font-weight-bold text-white p-2">Bootstrap this</h1>
+            <p class="lead text-white">Bootstrap is an open-source framework, used to build modern responsive, mobile first
+                websites. It was first created by Twitter to help with regularity for its developers. Bootstrap uses both CSS &
+                JavaScript languages to offer a wide plethora of tools.</p>
+        </div>
+    </header>
     <div class="container">
-        <header class="bd-header bg-dark py-3 d-flex align-items-stretch border-bottom border-dark">
-                <h2 class="font-weight-bold text-white">Bootstrap this</h2>
-        </header>
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="images/laptop.jpg" class="img-fluid" alt="laptop">
-            </div>
-            <div class="col-sm-6">
-                <h4 class="font-weight-bold">Bootstrap</h4>
-                <p>Bootstrap is an open-source framework, used to build modern responsive, mobile first websites.
-                    It was first created by Twitter to help with regularity for its developers.
-                    Bootstrap uses both CSS & JavaScript languages to offer a wide plethora of tools.</p>
-            </div>
-            <div class="col-sm-6">
-                <h4 class="font-weight-bold">How to use</h4>
-                <h5>Installation:</h5>
-                <p>There are two are processes’ of installing the bootstrap framework, you can either download it, or
-                    use the easier way,
-                    a content delivery network (CDN). Using the CDN allows for a faster delivery of Web Content.
-                    Like adding a CSS to link to your HTML, simply paste the CDN link into your HTML head to get
-                    started.
+        <hr class="my-4 bg-dark">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col mb-4">
+              <div class="card border-dark">
+                <img src="images/laptop-sm.jpg" class="card-img-top img-fluid" alt="laptop">
+                <div class="card-body">
+                  <h5 class="card-title ">Installation:</h5>
+                  <p class="card-text">There are two are processes’ of installing the bootstrap framework, you can either download it, 
+                    or use the easier way, a content delivery network (CDN). Using the CDN allows for a faster delivery of Web Content.
+                    Like adding a CSS to link to your HTML, simply paste the CDN link into your HTML head to get started.
                     The framework does offer a basic template that you can paste into your main html file.
-                    To obtain the template, follow the link below.
-                </p>
-                <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/">Starter Template</a>
+                    To obtain the template, follow the link below.</p>
+                    <a href="https://getbootstrap.com/docs/4.4/getting-started/introduction/" class="btn btn-info">Starter Template</a>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-6">
-                <img src="images/library.jpg" class="img-fluid" alt="library">
+            <div class="col mb-4">
+                <div class="card border-dark">
+                  <img src="images/library-sm.jpg" class="card-img-top img-fluid" alt="library">
+                  <div class="card-body">
+                    <h5 class="card-title">Getting started:</h5>
+                    <p class="card-text">Once you have installed the framework you can then browse through the many tools Bootstrap has to
+                      offer, including
+                      Typography, Colors, Responsive imaging, Buttons, Navigation, Mobile-first Flex & Grid layouts.
+                      These are just a few resources that framework has to offer, the best way to discovery all of them is
+                      to delve into Bootstrap’s extensive library which is hosted on its webpage.</p>
+                      <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="btn btn-info">Get Started</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card border-dark">
+                  <img src="images/coder-sm.jpg" class="card-img-top img-fluid" alt="coder">
+                  <div class="card-body">
+                    <h5 class="card-title">Breakpoints:</h5>
+                    <p class="card-text">The Bootstrap framework includes 6 breakpoints that are used to build responsive web pages, the sizes consist of x-sm, sm, med, lrg, x-lrg and xx-lrg. 
+                    These breakpoints are based off a 12-column grid-system, and begin with a mobile-first approach, to help with simple but effective layouts and design. 
+                    To find out more about Bootstrap breakpoints click on the link below.</p>
+                    <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" class="btn btn-info">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            <div class="col mb-4">
+              <div class="card border-dark">
+                <img src="images/html-sm.jpg" class="card-img-top img-fluid" alt="html-sm">
+                <div class="card-body">
+                  <h5 class="card-title">Typography</h5>
+                  <p class="card-text">Bootstrap allows us to set-up and style typography in a glut of ways, here we can customize headings & paragraph text, 
+                  and the ability to alter list, add block, source quotes and style inline text elements. 
+                  Bootstrap font sizes have been made to be responsive by default, for scalability across different screen sizes.</p>
+                  <a href="https://getbootstrap.com/docs/5.0/content/typography/" class="btn btn-info">More</a>
+                </div>
+              </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <h4 class="font-weight-bold">Getting started</h4>
-                <p>Once you have installed the framework you can then browse through the many tools Bootstrap has to
-                    offer, including
-                    Typography, Colors, Responsive imaging, Buttons, Navigation, Mobile-first Flex & Grid layouts.
-                    These are just a few resources that framework has to offer, the best way to discovery all of them is
-                    to delve into Bootstrap’s extensive library which is hosted on its webpage.
-                </p>
-                <a href="https://getbootstrap.com/">Bootstrap</a>
-            </div>
-            <div class="col-sm-12">
-                <img src="images/coder.jpg" class="img-fluid" alt="coder">
-            </div>
-        </div>
-        <footer>
-            Copyright &copy; Dan Correll
-        </footer>
+          </div>
+    </div>
+    <footer class="bd-header bg-dark align-items-stretch border-bottom text-white">
+        Copyright &copy; Dan Correll
+    </footer>
 
 
 
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-            crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-            crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
