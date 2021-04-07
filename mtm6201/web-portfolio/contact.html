@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dan Correll - Web Portfolio - Contact</title>
     <!-- Linking my CSS to my HTML -->
-    <link link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Lexend+Mega&family=Varela+Round&display=swap"
         rel="stylesheet">
+    <!-- Adding library for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -37,23 +39,23 @@
             </nav>
         </div>
         <!-- Contact page content -->
-        <div class="main">
+        <div class="main-contact">
             <h1>contact</h1>
             <!-- Adding 1st contact image -->
             <div class="contact-img-1">
                 <img src="images/ufo.jpg" alt="ufo">
             </div>
         </div>
-        <hr>
+        <hr class="contact-hr">
         <!-- Adding contact form  -->
         <div class="contact-form">
             <form action="thanks.html" method="get">
                 <div>
-                    <label for="name">name</label><br />
-                    <input type="text" id="fullname" name="fullname" required>
+                    <label for="name">name</label><br/>
+                    <input type="text" id="name" name="name" required>
                 </div>
                 <div>
-                    <label for="email">email</label><br />
+                    <label for="email">email</label><br/>
                     <input type="text" id="email" name="email" required>
                 </div>
                 <div>
@@ -76,18 +78,17 @@
             <!-- Adding social media icons / links -->
             <div class="social-icons">
                 <div class="facebook">
-                    <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook-logo"></a>
+                    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
                 </div>
-                <div>
-                    <a href="https://www.instagram.com/"><img src="images/instagram.png" alt="instagram-logo"></a>
+                <div class="instagram">
+                    <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
                 </div>
-                <div>
-                    <a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="twitter-logo"></a>
+                <div class="twitter">
+                    <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
                 </div>
                 <p>Copyright &copy; 2021 d.druff designs</p>
             </div>
         </div>
-    </div>
     </div>
 </body>
 
