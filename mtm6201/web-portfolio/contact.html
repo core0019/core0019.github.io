@@ -49,23 +49,25 @@
         <hr class="contact-hr">
         <!-- Adding contact form  -->
         <div class="contact-form">
-            <form action="thanks.html" method="get">
-                <div>
-                    <label for="name">name</label><br/>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label for="email">email</label><br/>
-                    <input type="text" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="message">type something</label><br />
-                    <textarea id="message" name="message"></textarea>
-                </div>
-            </form>
+            <div class="form">
+                <form action="thanks.html" method="get">
+                    <div>
+                        <label for="name"></label><br />
+                        <input type="text" placeholder="name" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email"></label><br />
+                        <input type="text" placeholder="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="message"></label><br />
+                        <textarea id="message" name="message">type something...</textarea>
+                    </div>
+                </form>
+            </div>
             <!-- Submit button for contact form -->
             <div class="button">
-                <button type="submit">Send</button>
+                <input type="submit" value="Button">
             </div>
         </div>
         <!-- Adding 2nd contact image -->
@@ -73,6 +75,7 @@
             <img src="images/eclispe.jpg" alt="eclispe">
         </div>
         <!-- Footer area -->
+        <br>
         <div class="footer">
             <hr class="footer-hr">
             <!-- Adding social media icons / links -->
