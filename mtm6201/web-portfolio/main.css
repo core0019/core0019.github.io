@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -54,27 +141,28 @@ table {
 -------------------------------------------------------------------------------------------- */
 
 /* Adding padding and border to total height and width & setting background color for site */
-html, body {
-    box-sizing: border-box;
+html,
+body {
+	box-sizing: border-box;
 	background-color: #040F0F;
 }
 
 /* Setting up max width and margin for container */
 
 .container {
-		max-width: 1200px;
-		margin:  0 10%;
+	max-width: 1200px;
+	margin: 0 10%;
 
 }
 
 /* Setting up so site images are responsive */
 .container img {
-	max-width: 100%; 
-	height:  auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .nav-bar a {
-   text-decoration: none; 
+	text-decoration: none;
 }
 
 /* _______________Styling typography_________ */
@@ -89,7 +177,7 @@ html, body {
 /* Styling my site Headers */
 h1,
 h2 {
-    text-transform: uppercase;
+	text-transform: uppercase;
 	font-family: 'Krona One', sans-serif;
 	color: #EDD83D;
 }
@@ -101,6 +189,7 @@ p {
 	color: #E8E9F3;
 	line-height: 16px;
 }
+
 /* Adding uppercases to my footer text */
 .footer p {
 	text-transform: uppercase;
@@ -110,14 +199,14 @@ p {
 
 .footer-hr {
 	background: #EDD83D;
-    height: 2px;
+	height: 2px;
 }
 
 .about-hr-1,
 .about-hr-2,
 .contact-hr {
 	background: #3C8F43;
-    height: 5px;
+	height: 2px;
 }
 
 .social-icons a {
@@ -127,7 +216,7 @@ p {
 .social-icons a {
 	color: #E8E9F3;
 	font-size: 25px;
-	width: auto;	
+	width: 100%;
 }
 
 
@@ -141,9 +230,9 @@ p {
 /* Adding flex to site navigation, to make it display centered and vertically  */
 .nav-list li {
 	display: flex;
-    flex-direction: column;
-    align-items: center;
-	
+	flex-direction: column;
+	align-items: center;
+
 }
 
 .nav-list li a {
@@ -163,25 +252,25 @@ p {
 
 }
 
+/* resizing eyeball so it remains the same size for mobile page */
 .mobile-eye img {
 	max-width: 100px;
 	max-height: 0 auto;
 }
 
 /* Mobile Footer */
-
-
-.social-icons  {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
+.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
 
 }
 
+/* adding padding for space around social icons */
 .social-icons a {
-	padding: 25px 0 25px 0;
+	padding: 20px 0 20px 0;
 }
 
 .footer p {
@@ -189,11 +278,51 @@ p {
 }
 
 
+/* -----Mobile Home page----- */
+
+/* Adding space between all elements in the main section area */
+.main-home div {
+	padding: 25px 0 25px 0;
+}
 
 
 
+/* -----Mobile About page----- */
 
 
+.main-about div {
+	padding: 20px 0 20px 0;
+}
+
+/* centering eyeball logo to center of page */
+
+.about-eye {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+/* -----Mobile Work page----- */
+
+.work-images {
+	display: flex;
+    flex-flow: row wrap;
+	padding: 20px 0 20px 0;
+}
+
+.work-images li {
+		max-width: 42%;
+		padding: 10px;
+		text-align: center;
+	}
+
+.ux-images li {
+    padding: 20px 0 20px 0;
+	text-align: center;
+}
 
 
-    
+/* -----Mobile Contact page----- */
+
+
