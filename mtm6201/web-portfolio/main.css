@@ -151,7 +151,7 @@ body {
 
 .container {
 	max-width: 1200px;
-	margin: 0 10%;
+	margin: 0 20%;
 
 }
 
@@ -338,6 +338,10 @@ centers to artwork thumbails */
 
 
 /* -----Mobile Contact page----- */
+
+.main-contact {
+	margin: 0 20%;
+}
 
 
 /* adding space to match other pages, using padding */
