@@ -10,3 +10,10 @@ Colors:
 #EDD83D
 #040F0F
 #E8E9F3
+
+Stock images:
+
+https://unsplash.com/photos/7YiZKj9A3DM
+https://unsplash.com/photos/HWQXIYbs8PM
+
+
