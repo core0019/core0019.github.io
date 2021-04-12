@@ -151,7 +151,7 @@ body {
 
 .container {
 	max-width: 1200px;
-	margin: 0 20%;
+	margin: 0 10%;
 
 }
 
@@ -259,14 +259,17 @@ p {
 
 /* Mobile Footer */
 
-
 .social-icons {
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
 	justify-content: space-around;
+	flex: 1;
 
+}
+
+.social-icons {
+	padding-bottom: 2rem;
+	flex-direction: column;
+	text-align: center;
 }
 
 /* adding padding for space around social icons */
@@ -275,7 +278,7 @@ p {
 }
 
 .footer p {
-	padding-bottom: 30px;
+	text-align: center;
 }
 
 
@@ -475,14 +478,11 @@ input[type=reset] {
 
 	/* Footer */
 
-	.social-icons a {
+	.social-icons  {
 		display: flex;
-		justify-content: space-evenly;
+		flex-direction: row;
 	}
 
-	.footer p {
-		padding-top: 35px;
-	}
 
 
 	/* -----Tabelt/Desktop Home page----- */
@@ -542,3 +542,21 @@ input[type=reset] {
 
 
 }
+
+/* ----------------------------------------------------------------------------------------
+  -------------------------------------------  Desktop ------------------------------------
+-------------------------------------------------------------------------------------------- */
+
+/* Setting up two media queries to make header for desktop screen sizes responsive  */
+@media screen and (min-width: 960px) {
+	.container {
+		margin: 0 15%;
+	}
+}
+
+@media screen and (min-width: 1068px) {
+	.container {
+		margin: 0 20%;
+	}
+}
+
